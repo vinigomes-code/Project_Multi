@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="../../static/css/homeStyle.css">
+    <link rel="stylesheet" href="../../static/css/specialtiesCard.css">
+    <link rel="shortcut icon" href="../../static/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <img src="../../static/img/logo-mcf-2022.png" alt="Logo Multiclnica">
+        <i onclick="menuAction()" class="bi bi-list" id="icone"></i>
+    </header>
+
+{% comment %}     <section id="hamburguer">
+        <ul>
+            <li><a href="#"><i class="bi bi-house-door"></i>A CLÍNICA<i class="bi bi-arrow-down-short"></i></a></li>
+        </ul>
+    </section>
+{% endcomment %}
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+
+    <footer class="footer">
+        <section class="address">
+            <h4>ENDEREÇO</h4>
+            <p>Rua Guaratinguetá, 60 Parangaba - Cep 60710-180</p>
+            <p>Fortaleza - Ceará - Brasil</p>
+        </section>
+        <section class="scheduling">
+            <h4>AGENDAMENTO DE CONSULTAS E <br> EXAMES</h4>
+            <p>(85) 3048-5850</p>
+        </section>
+        <section class="phoneOne">
+            <h4>OUVIDORIA</h4>
+            <p>(85) 3048-5850</p>
+            <p>ouvidoria@multiclinicafortaleza.com.br</p>
+        </section>
+        <section class="quickMenu">
+            <h4>MENU RÁPIDO</h4>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SOBRE NÓS</a></li>
+                <li><a href="#">EQUIPE</a></li>
+
+                <li><a href="#">ESTRUTURA</a></li>
+                <li><a href="#">ESPECIALIDADES</a></li>
+                <li><a href="#">EXAMES</a></li>
+
+                <li><a href="#">VACINAS</a></li>
+                <li><a href="#">CONVÊNIOS MÉDICOS</a></li>
+                <li><a href="#">CONTATO</a></li>
+
+            </ul>
+        </section>
+        <section class="maps" style="width: 95%;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1343644868384!2d-38.56969602425925!3d-3.7809303434432224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74ea029549179%3A0x5ecf318aa0a937a4!2sMulticl%C3%ADnica%20Fortaleza!5e0!3m2!1spt-BR!2sbr!4v1717719982448!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <hr>
+        <section class="rightsReserved">
+            <p>© 2022 MULTICLINICA FORTALEZA LTDA. CNPJ 01.373.946/0001-66. TODOS OS DIREITOS RESERVADOS.</p>
+        </section>
+        <section class="social_Media">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-telephone-fill"></i>
+        </section>
+    </footer>
+
+    <script src="../../static/js/menuHome.js"></script>
+</body>
+</html>

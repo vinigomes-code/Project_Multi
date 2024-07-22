@@ -1,0 +1,142 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+header.header{
+    width: 100%;
+    height: 77px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+header.header img{
+    width: 235px;
+    height: 60px;
+}
+
+header.header i{
+    font-size: 33px;
+    color: #DA722B;
+}
+
+#hamburguer{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 0px;
+}
+
+#hamburguer > a{
+    position: absolute;
+    margin: 0 auto;
+}
+
+main{
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer.footer{
+    width: 100%;
+    background-color: #115e34;
+    color: white;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px 15px 20px;
+}
+
+section.address, section.scheduling, section.phoneOne{
+    margin-bottom: 36px;
+}
+
+section.address > h4, section.scheduling > h4, section.phoneOne > h4, section.quickMenu > h4{
+    margin-bottom: 36px;
+}
+
+section.address > p:nth-child(3){
+    margin-top: 6px;
+}
+
+section.quickMenu {
+    margin-bottom: 36px;
+}
+
+section.quickMenu > ul > li{
+    list-style-type: none;
+}
+
+section.quickMenu > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+section.quickMenu > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    width: 95%;
+    margin: 15px 0px;
+    opacity: 0.1;
+}
+
+section.rightsReserved{
+    margin:  16px 0;
+}
+
+section.rightsReserved > p{
+    line-height: 25px;
+}
+
+section.social_Media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 16px;
+}
+
+section.social_Media > i{
+    font-size: 22px;
+}
+
+@keyframes down {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 300px;
+    }
+}
+
+@keyframes up {
+    from {
+        height: 300px;
+    }
+
+    to {
+        height: 0px;
+    }
+}

@@ -1,0 +1,165 @@
+.card_especialidade{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,.15);
+    color: #495057;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 0 auto;
+    margin-bottom: 0.7rem;
+}
+
+div.preco_especialidade{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+section.caixa_preco_especialidade{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_especialidade > p:first-child{
+    cursor: pointer;
+    padding-left: .5rem;
+    width: 33.3%;
+}
+
+.card_especialidade > p:first-child:hover{
+    color: #DA722B;
+}
+
+.card_especialidade > div.preco_especialidade{
+    width: 33.3%;
+}
+
+.card_especialidade > div.preco_especialidade span{
+    font-size: 11px;
+    color: #495057;
+}
+
+.card_especialidade > div.preco_especialidade p{
+    color: #00a963;
+    font-weight: bold;
+}
+
+.card_especialidade > .botao_especialidade{
+    width: 33.3%;
+    text-align: right;
+}
+
+.card_especialidade  a{
+    display: inline-block;
+    color: white;
+    background-color: #DA722B;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.botao_especialidade > a:hover{
+    background-color: #924c1d;
+}
+
+.card_especialidade > a:hover{
+    color: #ffffff !important;
+    background-color: #9d501b !important;
+    border-color: #9d501b !important;
+}
+
+.card_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.card_button > a{
+    width: 285px;
+    text-align: center;
+    height: 48px;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #DA722B;
+    border: 1px solid #DA722B;
+    background-color: transparent;
+    border-radius: 12px;
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card_button > a:hover{
+    background-color: #DA722A;
+    color: white;
+}
+
+@media screen and (max-width: 1198px){
+    #nome_principal{
+        margin-top: 100px;
+    }
+
+    .menu-botoes{
+        margin-top: 150px;
+    }
+
+    #clients-8{
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    div.locais{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .card_especialidade{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        padding-bottom: 8px;
+    }
+
+    .card_especialidade > p:first-child{
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #e9ecef;
+        padding: 0.5rem 0 !important;
+    }
+
+    div.preco_especialidade{
+        margin: 8px 0;
+    }
+    
+    .card_especialidade > div.preco_especialidade{
+        width: auto;
+    }
+
+    .card_especialidade > .botao_especialidade{
+        width: 100%;
+        text-align: center;
+    }
+
+    .card_especialidade a{
+        width: 95%;
+        text-align: center;
+    }
+}
