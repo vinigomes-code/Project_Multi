@@ -37,6 +37,7 @@ header.header i{
     background-color: white;
     width: 100%;
     height: 0px;
+    z-index: 10;
 }
 
 #hamburguer > a{
@@ -139,4 +140,15 @@ section.social_Media > i{
     to {
         height: 0px;
     }
+}
+
+.backgroundImg{
+    position: relative;
+    top: -50px;
+    height: 200px;
+    opacity: 0.5;
+    width: 100%;
+    z-index: 0;
+    background-image: url('../img/recepcao-700x369.png');
+    background-size: cover;
 }
