@@ -146,9 +146,47 @@ section.social_Media > i{
     position: relative;
     top: -50px;
     height: 200px;
-    opacity: 0.5;
     width: 100%;
     z-index: 0;
     background-image: url('../img/recepcao-700x369.png');
     background-size: cover;
+}
+
+div.fade{
+    background-color: #DFE0E6;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1.main_title{
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    color: #DA722B;
+    z-index: 10;
+    text-align: center;
+}
+
+.schedulingOnline{
+    position: relative;
+    top: -50px;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.schedulingOnline > a{
+    text-decoration: none;
+    color: white;
+    background-color: #DA722B;
+    padding: 10px;
+    border-radius: 5px;
 }
