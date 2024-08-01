@@ -5,7 +5,11 @@ from .models import Specialties, Exam
 
 #HTTP Request RETURN HTTP Response
 def home(request):
-    return render(request, 'pages/index.html')
+    specialties =Specialties.objects.all()
+
+    return render(request, 'pages/index.html', context={
+        'specialties': specialties,
+    })
 
 def about(request):
     specialties = Specialties.objects.all()
