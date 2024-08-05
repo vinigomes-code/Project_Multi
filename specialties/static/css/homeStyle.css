@@ -33,6 +33,10 @@ header.header i{
     color: #DA722B;
 }
 
+div.list-itens{
+    display: none;
+}
+
 #hamburguer{
     position: absolute;
     background-color: white;
@@ -187,21 +191,29 @@ h1.main_title{
     align-items: center;
 }
 
-.schedulingOnline > div:nth-child(2){
+.schedulingOnline > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+}
+
+.schedulingOnline > div > div:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center ;
     gap: 10px;
 }
 
-.schedulingOnline > div:nth-child(2) > div:nth-child(1){
+.schedulingOnline > div > div:nth-child(2) > div:nth-child(1){
     background-color: #DA722B;
     padding: 12px;
     border-radius: 5px;
     text-align: center;
 }
 
-.schedulingOnline > div:nth-child(2) > div:nth-child(2){
+.schedulingOnline > div > div:nth-child(2) > div:nth-child(2){
     background-color: #DA722B;
     padding: 12px;
     border-radius: 5px;
@@ -209,7 +221,7 @@ h1.main_title{
 }
 
 
-.schedulingOnline > div:nth-child(2) > div > a{
+.schedulingOnline > div > div:nth-child(2) > div > a{
     text-decoration: none;
     color: white;
     font-size: 16px;
@@ -247,7 +259,7 @@ header.head_specialties > h2 > span{
 }
 
 @media screen and (min-width: 768px){  
-    .schedulingOnline{
+    .schedulingOnline > div{
         justify-content: space-between;
         padding-right: 15px;
         padding-left: 15px;
@@ -272,6 +284,10 @@ header.head_specialties > h2 > span{
 }
 
 @media screen and (min-width:1024px){
+    h1.main_title{
+        display: none;
+    }
+
     #logo{
         display: block;
     }
@@ -286,5 +302,12 @@ header.head_specialties > h2 > span{
         margin-left: 20px;
     }
 
-    
+    header.header > i{
+        display: none;
+    }
+
+    div.list-itens{
+        display: flex;
+    }
 }
+
