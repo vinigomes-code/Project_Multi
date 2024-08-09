@@ -35,6 +35,26 @@ header.header i{
 
 div.list-itens{
     display: none;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 20px;
+    margin-right: 10px;
+}
+
+div.list-itens > a{
+    text-decoration: none;
+    text-align: center;
+    color: #879A9F;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+div.list-itens > a > i{
+    color: #879A9F;
 }
 
 #hamburguer{
@@ -309,5 +329,27 @@ header.head_specialties > h2 > span{
     div.list-itens{
         display: flex;
     }
+
+    .backgroundImg{
+        background-image: url('../img/tecnicas-de-organizacao-para-recepcao-de-clinicas\ -\ Copia.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
+@media screen and (min-width: 1440px){
+    div.list-itens{
+        margin-right: 30px;
+    }
+
+    header.header > img{
+        margin-left: 50px;
+    }
+
+    .backgroundImg{
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
